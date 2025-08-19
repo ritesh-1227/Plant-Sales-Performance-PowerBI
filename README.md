@@ -13,10 +13,13 @@ A production-style **Power BI** project analyzing **Sales, Quantity, and Gross P
 
 ## 📸 Preview
 
-> Replace with your screenshots:
-- `assets/dashboard-quantity-2023.png` — Quantity 2023
-- `assets/dashboard-sales-2024.png` — Sales 2024
-- `assets/data-model.png` — Data model & relationships
+<p align="center">
+  <img src="assets/gp_2023_ss.png" width="45%" />
+  <img src="assets/qty_2023_ss.png" width="45%" />
+</p>
+<p align="center">
+  <em>  Gross Profit 2023  </em> | <em>  Quantity 2023 with Drilldown  </em>
+</p>
 
 ---
 
@@ -44,7 +47,7 @@ A production-style **Power BI** project analyzing **Sales, Quantity, and Gross P
 ├─ assets/ # screenshots
 ├─ dax/ # modular measures (copy into _Measures table)
 ├─ data/ # data files
-├─ powerbi/ # put .pbix here (use Git LFS)
+├─ powerbi/ # .pbix file
 └─ README.md
 ```
 
@@ -55,6 +58,8 @@ A production-style **Power BI** project analyzing **Sales, Quantity, and Gross P
 
 **Fact_Sales** (Date_Time, Account_id, Product_id, Sales USD, COGS_USD, quantity)  
 → relates to **Dim_Date[Date]**, **Dim_Account[Account_id]**, **Dim_Product[Product_Name_id]**.
+
+![Data Model & Relationships](assets/data_model_ss.png)
 
 ---
 

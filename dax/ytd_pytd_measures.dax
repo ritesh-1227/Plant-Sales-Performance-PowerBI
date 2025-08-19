@@ -1,0 +1,8 @@
+YTD_Sales = TOTALYTD([Sales], Dim_Date[Date]);
+
+priorYTD_Sales =
+CALCULATE(
+  [Sales],
+  SAMEPERIODLASTYEAR(Dim_Date[Date]),
+  Dim_Date[Inpast] = TRUE
+);

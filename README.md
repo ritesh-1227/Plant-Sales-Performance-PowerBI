@@ -45,7 +45,7 @@ A production-style **Power BI** project analyzing **Sales, Quantity, and Gross P
 
 ```
 ├─ assets/ # screenshots
-├─ dax/ # modular measures (copy into _Measures table)
+├─ dax/ # modular measures (samples for one switch measure where appropriate and other minor details)
 ├─ data/ # data files
 ├─ powerbi/ # .pbix file
 └─ README.md

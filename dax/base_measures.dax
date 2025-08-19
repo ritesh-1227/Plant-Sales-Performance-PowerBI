@@ -1,0 +1,5 @@
+Sales = SUM(Fact_Sales[Sales USD]);
+Quantity = SUM(Fact_Sales[quantity]);
+COGS = SUM(Fact_Sales[COGS_USD]);
+Gross Profit = [Sales] - [COGS];
+GP% = DIVIDE([Gross Profit], [Sales]);

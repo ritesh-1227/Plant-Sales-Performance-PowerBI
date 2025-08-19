@@ -1,0 +1,20 @@
+S_PYTD = VAR selected_value = SELECTEDVALUE(Slc_Values[Values]) 
+  VAR result = SWITCH(selected_value, 
+                      "Sales", [priorYTD_Sales], 
+                      "Quantity", [priorYTD_Quantity], 
+                      "Gross Profit", [priorYTD_GrossProfit], 
+                      BLANK() 
+                     ) 
+  RETURN result 
+
+  
+S_YTD = VAR selected_value = SELECTEDVALUE(Slc_Values[Values]) 
+  VAR result = SWITCH(selected_value, 
+                      "Sales", [YTD_Sales], 
+                      "Quantity", [YTD_Quantity], 
+                      "Gross Profit", [YTD_GrossProfit], 
+                      BLANK() 
+                     ) 
+  RETURN result
+
+YTD vs PYTD = [S_YTD]-[S_PYTD]

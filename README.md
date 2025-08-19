@@ -1,4 +1,4 @@
-# Plan Co. Performance — Power BI (YTD vs PYTD)
+# Plant Co. Performance — Power BI (YTD vs PYTD)
 
 [![Project Type: Portfolio](https://img.shields.io/badge/Project-Portfolio-blue)](#)
 [![Built With: Power BI](https://img.shields.io/badge/Built%20with-Power%20BI-black)](#)

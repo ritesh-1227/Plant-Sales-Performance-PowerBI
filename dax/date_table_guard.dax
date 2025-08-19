@@ -1,0 +1,6 @@
+Dim_Date = CALENDAR(DATE(2022,1,1), DATE(2024,12,31));
+
+Dim_Date[Inpast] =
+VAR lastSalesDate = CALCULATE(MAX(Fact_Sales[Date_Time]), ALL(Fact_Sales))
+VAR lastSalesDate_priorYear = EDATE(lastSalesDate, -12)
+RETURN Dim_Date[Date] <= lastSalesDate_priorYear;
